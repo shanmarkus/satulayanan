@@ -1,0 +1,18 @@
+<Alloy>
+	<Window class="container">
+		<View id="header">
+			<Label id="title">Satu Layanan</Label>
+			<View class="divider"/>
+		</View>
+
+		<View platform="ios" id="footer">
+			<TabbedBar onClick="sayHi" id="tabbedbar">
+				<Labels>
+					<Label>Daftar Kategori</Label>
+					<Label>Daftar Modul Layanan</Label>
+					<Label>Tentang Satu Layanan</Label>
+				</Labels>
+			</TabbedBar>
+		</View>
+	</Window>
+</Alloy>
