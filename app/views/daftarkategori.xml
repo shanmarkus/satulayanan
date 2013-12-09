@@ -1,5 +1,5 @@
 <Alloy>
 	<Window id="win3" title="Add Item" class="container" modal="false" backgroundColor="white">
-  	<Button class="button" onClick="closeWindow">Cancel</Button>
+		<Button class="button" onClick="closeWindow">Cancel</Button>
 	</Window>
 </Alloy> 
