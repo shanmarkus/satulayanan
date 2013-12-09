@@ -17,22 +17,25 @@ function Controller() {
         modal: "true"
     });
     $.__views.win2 && $.addTopLevelView($.__views.win2);
-    $.__views.scrollView = Ti.UI.createScrollView({
-        id: "scrollView",
+    $.__views.menu = Ti.UI.createScrollView({
+        top: "20dp",
+        bottom: "46dp",
+        height: "414dp",
+        layout: "vertical",
+        contentWidth: "auto",
+        id: "menu",
         showVerticalScrollIndicator: "true",
-        showHorizontalScrollIndicator: "true",
-        height: "100%",
-        width: "100%"
+        showHorizontalScrollIndicator: "false"
     });
-    $.__views.win2.add($.__views.scrollView);
+    $.__views.win2.add($.__views.menu);
     $.__views.__alloyId11 = Ti.UI.createLabel({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         color: "#000",
-        text: '"Portal Satu Layanan" adalah laman yang dirancang dan dibangun untuk memberikan kemudahan kepada masyarakat dalam mendapatkan informasi mengenai layanan-layanan yang diberikan badan publik atau pemerintah kepada warga negaranya.\n\n					Satu Layanan merupakan salah satu inisiatif dari gerakan Open Government Indonesia yang mendorong lebih jauh nilai-nilai transparansi, partisipasi, dan inovasi di dalam birokrasi di Indonesia. Melalui ketiga nilai tersebut diharapkan kualitas dan profesionalisme pelayanan badan publik akan meningkat sehingga pada akhirnya seluruh manfaat akan dirasakan oleh warga negara Indonesia.\n\n					Satu Layanan sendiri merupakan hasil kolaborasi antara pemerintah yang dimotori oleh Unit Kerja Presiden bidang Pengawsan dan Pengendalian Pembangunan dibantu beberapa instansi lainnya, BUMN, Akademisi, sektor swasta, hingga para relawan.\n\n					Portal Satu Layanan ini dirancang untuk menghadapi abad informasi dan bertujuan untuk mewujudkan cita-cita adanya suatu pusat informasi layanan masyarakat sehari-hari.',
+        text: '"Portal Satu Layanan" adalah laman yang dirancang dan dibangun untuk memberikan kemudahan kepada masyarakat dalam mendapatkan informasi mengenai layanan-layanan yang diberikan badan publik atau pemerintah kepada warga negaranya.\n\n\n					Satu Layanan merupakan salah satu inisiatif dari gerakan Open Government Indonesia yang mendorong lebih jauh nilai-nilai transparansi, partisipasi, dan inovasi di dalam birokrasi di Indonesia.\n\n\n					Melalui ketiga nilai tersebut diharapkan kualitas dan profesionalisme pelayanan badan publik akan meningkat sehingga pada akhirnya seluruh manfaat akan dirasakan oleh warga negara Indonesia.\n\n\n					Satu Layanan sendiri merupakan hasil kolaborasi antara pemerintah yang dimotori oleh Unit Kerja Presiden bidang Pengawsan dan Pengendalian Pembangunan dibantu beberapa instansi lainnya, BUMN, Akademisi, sektor swasta, hingga para relawan.\n\n\n					Portal Satu Layanan ini dirancang untuk menghadapi abad informasi dan bertujuan untuk mewujudkan cita-cita adanya suatu pusat informasi layanan masyarakat sehari-hari.',
         id: "__alloyId11"
     });
-    $.__views.scrollView.add($.__views.__alloyId11);
+    $.__views.menu.add($.__views.__alloyId11);
     $.__views.footer = Ti.UI.createView({
         bottom: 0,
         height: "46dp",
