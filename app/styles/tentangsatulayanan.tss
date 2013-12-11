@@ -31,7 +31,10 @@
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	color: "#000"
+	color: "#000",
+	font: {
+                fontSize: '12dp'
+        }
 } 
 
 "#todoWin": {
@@ -46,24 +49,30 @@
 }
 
 "#menu": {
-        top: "20dp",
-        bottom: "46dp",
-        height: "414dp",
+        top: "40dp",
+        bottom: "50dp",
+        height: "390dp",
   		layout: 'vertical',
   		contentWidth: 'auto'
 }
 
-"#title": {
-        left: "10dp",
-        color: "#fff",
-        font: {
-                fontSize: '24dp',
-                fontWeight: 'bold'
+"#header": {
+        top: 0,
+        height: '40dp',
+        width: Ti.UI.FILL,
+        backgroundGradient: {
+                type: "linear",
+                startPoint: { x: "0%", y:"0%"},
+                endPoint:   { x: "0%", y:"100%"},
+                colors: [
+                        { color: "#a00", offset: 0.0 },
+                        { color: "#800", offset: 1.0 }
+                ]
         }
 }
 
 ".divider": {
-        height: "48dp",
+        height: "44dp",
         width: "3dp",
         top: "1dp",
         right: "50dp",
@@ -97,7 +106,7 @@
 
 "#footer": {
         bottom: 0,
-        height: '46dp',
+        height: '50dp',
         width: Ti.UI.FILL,
         backgroundGradient: {
                 type: "linear",

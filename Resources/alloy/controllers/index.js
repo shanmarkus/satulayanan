@@ -43,7 +43,7 @@ function Controller() {
     $.__views.title = Ti.UI.createLabel({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        color: "#fff",
+        color: "#000",
         left: "10dp",
         font: {
             fontSize: "24dp",
@@ -86,24 +86,6 @@ function Controller() {
         bottom: 0,
         height: "46dp",
         width: Ti.UI.FILL,
-        backgroundGradient: {
-            type: "linear",
-            startPoint: {
-                x: "0%",
-                y: "0%"
-            },
-            endPoint: {
-                x: "0%",
-                y: "100%"
-            },
-            colors: [ {
-                color: "#a00",
-                offset: 0
-            }, {
-                color: "#800",
-                offset: 1
-            } ]
-        },
         id: "footer"
     });
     $.__views.index.add($.__views.footer);
@@ -125,7 +107,7 @@ function Controller() {
     __alloyId4.push(__alloyId10);
     $.__views.tabbedbar = Ti.UI.iOS.createTabbedBar({
         style: Titanium.UI.iPhone.SystemButtonStyle.BAR,
-        backgroundColor: "#fff",
+        backgroundColor: "blue",
         index: 1,
         height: 40,
         left: 20,

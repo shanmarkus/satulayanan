@@ -1,15 +1,19 @@
 <Alloy>
 	<Window id="win2" title="Add Item" class="container" modal="true" backgroundColor='white'>
+		
+		<View id="header">
+			<Label>Satu Layanan</Label>
+		</View>
 
 		<ScrollView id="menu" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="false">
-				<Label>
-				"Portal Satu Layanan" adalah laman yang dirancang dan dibangun untuk memberikan kemudahan kepada masyarakat dalam mendapatkan informasi mengenai layanan-layanan yang diberikan badan publik atau pemerintah kepada warga negaranya.\n\n
-					Satu Layanan merupakan salah satu inisiatif dari gerakan Open Government Indonesia yang mendorong lebih jauh nilai-nilai transparansi, partisipasi, dan inovasi di dalam birokrasi di Indonesia.\n\n
-					Melalui ketiga nilai tersebut diharapkan kualitas dan profesionalisme pelayanan badan publik akan meningkat sehingga pada akhirnya seluruh manfaat akan dirasakan oleh warga negara Indonesia.\n\n
-					Satu Layanan sendiri merupakan hasil kolaborasi antara pemerintah yang dimotori oleh Unit Kerja Presiden bidang Pengawsan dan Pengendalian Pembangunan dibantu beberapa instansi lainnya, BUMN, Akademisi, sektor swasta, hingga para relawan.\n\n
-					Portal Satu Layanan ini dirancang untuk menghadapi abad informasi dan bertujuan untuk mewujudkan cita-cita adanya suatu pusat informasi layanan masyarakat sehari-hari.
+				<Label>"Portal Satu Layanan" adalah laman yang dirancang dan dibangun untuk memberikan kemudahan kepada masyarakat dalam mendapatkan informasi mengenai layanan-layanan yang diberikan badan publik atau pemerintah kepada warga negaranya.\n\n
+Satu Layanan merupakan salah satu inisiatif dari gerakan Open Government Indonesia yang mendorong lebih jauh nilai-nilai transparansi, partisipasi, dan inovasi di dalam birokrasi di Indonesia.\n\n
+Melalui ketiga nilai tersebut diharapkan kualitas dan profesionalisme pelayanan badan publik akan meningkat sehingga pada akhirnya seluruh manfaat akan dirasakan oleh warga negara Indonesia.\n\n
+Satu Layanan sendiri merupakan hasil kolaborasi antara pemerintah yang dimotori oleh Unit Kerja Presiden bidang Pengawsan dan Pengendalian Pembangunan dibantu beberapa instansi lainnya, BUMN, Akademisi, sektor swasta, hingga para relawan.\n\n
+Portal Satu Layanan ini dirancang untuk menghadapi abad informasi dan bertujuan untuk mewujudkan cita-cita adanya suatu pusat informasi layanan masyarakat sehari-hari.
 				</Label>
 		</ScrollView>
+		
 		<View platform="ios" id="footer">
 			<TabbedBar onClick="sayHi" id="tabbedbar">
 				<Labels>
